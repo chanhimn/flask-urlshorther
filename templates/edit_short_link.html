@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Short Link</title>
+</head>
+<body>
+<h1>Edit Short Link</h1>
+
+<form action= "{{url_for('edit_short_link', rid = rid)}}" method = 'POST'>
+    <p>rid:</p>
+    <input type = 'text' size='30' name = 'rid' value = '{{rid}}' readonly>
+    <p>short:</p>
+    <input type = 'text' size='30' name = 'short' value = '{{short}}'>
+    <p>link:</p>
+    <input type = 'text' size='30' name = 'link' value = '{{link}}'>
+
+    <p></p>
+    <input type='submit' value='Update'>
+</form>
+</body>
+</html>

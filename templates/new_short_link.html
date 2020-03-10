@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Short Link</title>
+</head>
+<body>
+<h1>New Short Link</h1>
+
+<form action= "{{url_for('new_short_link')}}" method = 'POST'>
+    <p>short:</p>
+    <input type = 'text' size='30' name = 'short' value = ''>
+    <p>link:</p>
+    <input type = 'text' size='30' name = 'link' value = ''>
+    <p></p>
+    <input type='submit' value='Create'>
+</form>
+</body>
+</html>
