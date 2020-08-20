@@ -3,12 +3,13 @@ from shorturldb import execute_sql, update_url_record, delete_url_record_by_rid,
 
 
 app = Flask(__name__)
-app.debug = True
+app.debug = False
 
 
 @app.route('/')
 def index():
-    return redirect(url_for('display_all_shortcuts'))
+    # _scheme="https", _external=True is needed becasuse redirect remove s from https
+    return redirect(url_for('display_all_shortcuts', _scheme="https", _external=True))
 
 
 @app.route("/<string:short_url>")
