@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, session, jsonify
+from flask import Flask, render_template, request, redirect, url_for
 from shorturldb import execute_sql, update_url_record, delete_url_record_by_rid, insert_url_record
 
 
